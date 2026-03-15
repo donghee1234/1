@@ -1,1 +1,30 @@
 
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+int main(void)
+{
+    double x = 0;
+    int fixed = 0;
+    int i = 0;
+
+    scanf("%lf", &x);
+
+    fixed = (int)(x * 256);
+
+    for (i = 15; i >= 8; i--)
+    {
+        printf("%d", (fixed >> i) & 1);
+    }
+
+    printf(".");
+
+    for (i = 7; i >= 0; i--)
+    {
+        printf("%d", (fixed >> i) & 1);
+    }
+
+    printf("\n");
+
+    return 0;
+}
