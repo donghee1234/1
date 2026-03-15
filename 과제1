@@ -1,1 +1,17 @@
 
+#include <stdio.h>
+
+int main() {
+    int x = -1;
+
+    // x + 1 계산: -1 + 1 = 0 이면 2의 보수 방식
+    if (x + 1 == 0) {
+        printf("2\n");
+    }
+    // 아니면 1의 보수 방식
+    else {
+        printf("1\n");
+    }
+
+    return 0;
+}
