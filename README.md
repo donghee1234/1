@@ -1,29 +1,6 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-
-int main(void)
-{
-    double x = 0;
-    int fixed = 0;
-    int i = 0;
-
-    scanf("%lf", &x);
-
-    fixed = (int)(x * 256);
-
-    for (i = 15; i >= 8; i--)
-    {
-        printf("%d", (fixed >> i) & 1);
-    }
-
-    printf(".");
-
-    for (i = 7; i >= 0; i--)
-    {
-        printf("%d", (fixed >> i) & 1);
-    }
-
-    printf("\n");
-
-    return 0;
-}
+# 분수 계산 ADT 프로젝트
+- 분자, 분모를 가진 구조체 사용
+- 사칙연산 (+, -, *, /) 구현
+- 결과는 항상 기약분수로 출력
+- A/B 형식의 문자열 입출력 지원
+- 
