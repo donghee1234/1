@@ -11,3 +11,6 @@ O(log(min(a.b)))
 공간 복잡도는 O(1) < 상수시간
 
 GCD 알고리즘은 $O(\log N)$ 의 시간 복잡도를 가짐.
+
+
+<img width="815" height="628" alt="image" src="https://github.com/user-attachments/assets/fca22f23-7ff0-481c-bc5b-72fdca4f7231" />
