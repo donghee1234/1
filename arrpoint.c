@@ -7,7 +7,7 @@ int main() {
     int *arr;
     int sum = 0, max, min;
 
-    printf("배열의 크기를 입력하세요: ");
+    printf("배열 크기: ");
     scanf("%d", &N);
 
     arr = (int *)malloc(sizeof(int) * N);
@@ -17,13 +17,13 @@ int main() {
         *(arr + i) = rand() % (N + 1);
     }
 
-    printf("처음부터 출력: ");
+    printf("처음: ");
     for (int i = 0; i < N; i++) {
         printf("%d ", *(arr + i));
     }
     printf("\n");
 
-    printf("뒤에서부터 출력: ");
+    printf("끝: ");
     for (int i = N - 1; i >= 0; i--) {
         printf("%d ", *(arr + i));
     }
